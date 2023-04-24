@@ -15,7 +15,7 @@ Dark green: #28b485
   box-sizing: inherit;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
@@ -157,19 +157,21 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all 0.2s;
+  transition: all 0.4s;
   position: relative;
-font-size: 1.6rem;
+  font-size: 1.6rem;
+  color: black;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -187,10 +189,10 @@ font-size: 1.6rem;
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
-.btn--white::after{
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -205,14 +207,13 @@ font-size: 1.6rem;
     transform: translateY(3rem);
   }
 
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
 
-.btn--animated{
-  animation: moveInBottom .5s ease-out .75s;
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
